@@ -24,29 +24,73 @@
     </div>
   </header>
   <div class="gamecontainer">
-    <div class="marie">
+    <div class="game-questions">
+      <div class="marie">
+        <a href="#openModal">Learn About Marie!</a>
+        <br/>
+        <div id="openModal" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Marie Antoinette</h2>
+            <h4>Marie Antoinette was the fifteenth child of Francis I, Holy Roman Emperor and Empress Maria Theresa and the Queen of France from 1774 to 1792.
+              <br/>She was convicted by the Revolutionary Tribunal of high treason during the French Revolution and executed by guillotine on Place de la Révolution on 16 October 1793.</h4>
+          </div>
+        </div>
+        <div class="buttongroup">
+          <button id="submit-btn1" onclick="subtractone(); hideshow1()">Yes!</button>
+          <button id="submit-btn2" onclick="addone(); hideshow1()">No!</button>
+        </div>
+      </div>
+      <div class="sherlock">
+        <!--<a href="#openModal">Learn About Sherlock!</a>
+        <br/>
+        <div id="openModal" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Marie Ringa</h2>
+            <h4>nUMBER 2.</h4>
+          </div>
+        </div>-->
+        <div class="buttongroup">
+          <button id="submit-btn3" onclick="subtractone(); hideshow2()">Yes!</button>
+          <button id="submit-btn4" onclick="addone(); hideshow2()">No!</button>
+        </div>
+      </div>
+      <div class="rahulg">
+        <!--<a href="#openModal">Learn About Rahul!</a>
+        <br/>
+        <div id="openModal" class="modalDialog">
+          <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Why?</h2>
+            <h4>Oh, if you must..</h4>
+          </div>
+        </div>-->
+        <div class="buttongroup">
+          <button id="submit-btn5" onclick="addone(); hideshow3()">Yes!</button>
+          <button id="submit-btn6" onclick="subtractone(); hideshow3()">No!</button>
+        </div>
+      </div>
     </div>
-    <div class="sherlock">
-    </div>
-    <div class="rahulg">
-    </div>
-  </div>
-  <div class="buttoncontainer">
-    <button id="submit-btn1" onclick="subtractone()">Yes!</button>
-    <button id="submit-btn2" onclick="addone()">No!</button>
-  </div>
-  <div class="buttoncontainer">
-    <button id="submit-btn3" onclick="subtractone()">Yes!</button>
-    <button id="submit-btn4" onclick="addone()">No!</button>
-  </div>
-  <div class="buttoncontainer">
-    <button id="submit-btn5" onclick="addone()">Yes!</button>
-    <button id="submit-btn6" onclick="subtractone()">No!</button>
   </div>
   <div class="scoresheet">
     <p id="resultMessage"></p>
+    <p id="scoremessage"></p>
   </div>
   <footer>
+    <ul>
+      <li>
+        <a href="#">
+          <img src="twitter.png" alt="Twitter logo">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="facebook.png" alt="Facebook logo">
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">Copyright 2016. Flush.</p>
   </footer>
 </body>
 
