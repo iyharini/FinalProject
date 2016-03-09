@@ -9,29 +9,13 @@ function subtractone()
 {
     finalScore = finalScore - 1;
     $("#resultMessage").html("<p>" + "Your score is: " + finalScore + "</p>");
-    if (finalScore == "-1"||finalScore == "-2"||finalScore == "-3"){
-    $("#scoremessage").html("<p>" + "Try again for a perfect score! " +"</p>");
-    }
-    if (finalScore == "0"){
-    $("#scoremessage").html("<p>" + "Try!!" +"</p>");
-    }
+    $("#scoremessage").html("<p>" + "Well. This is embarrassing. For you. " +"</p>");
 }
 function addone()
 {
     finalScore = finalScore + 1;
     $("#resultMessage").html("<p>" + "Your score is: " + finalScore + "</p>");
-    if (finalScore == "-1"||finalScore == "-2"||finalScore == "-3"){
-    $("#scoremessage").html("<p>" + "Uh Oh! Try again? " +"</p>");
-    }
-    if (finalScore == "1"||finalScore == "2"){
-    $("#scoremessage").html("<p>" + "Try again for a perfect score! " +"</p>");
-    }
-    if (finalScore == "3"){
-    $("#scoremessage").html("<p>" + "Amazing!" +"</p>");
-    }
-    if (finalScore == "0"){
-    $("#scoremessage").html("<p>" + "Try!" +"</p>");
-    }
+    $("#scoremessage").html("<p>" + " You're not so bad'! "+"</p>");
 }
 function hideshow1()
 {
@@ -47,4 +31,8 @@ function hideshow3()
 {
          $("#submit-btn5").hide();
          $("#submit-btn6").hide();
+};
+function openMariemodal()
+{
+console.log("Hiyaa!");
 };
